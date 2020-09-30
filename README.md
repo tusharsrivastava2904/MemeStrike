@@ -1,5 +1,5 @@
 # MemeStrike
-Second mini-project while learning Kotlin. A mem sharing app.
+Second mini-project while learning Kotlin. A meme sharing app.
 # MemeStrike
 Second mini-project while learning Kotlin. A meme sharing app.
 
