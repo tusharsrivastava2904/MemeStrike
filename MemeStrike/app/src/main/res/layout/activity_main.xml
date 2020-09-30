@@ -10,35 +10,49 @@
         android:id="@+id/memeimageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/shareButton"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="116dp"
         tools:layout_editor_absoluteY="71dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:background="@color/bgcolor"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/memeimageView"
+        app:layout_constraintBottom_toBottomOf="@id/memeimageView"
+        app:layout_constraintLeft_toLeftOf="@id/memeimageView"
+        app:layout_constraintRight_toRightOf="@id/memeimageView" />
 
     <Button
         android:id="@+id/shareButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="32dp"
-        android:text="Share"
+        android:text="@string/share"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/guideline"
-        android:onClick="shareMeme"/>
+        android:onClick="shareMeme"
+        android:background="@color/shareButtonColor"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/nextButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="32dp"
-        android:text="Next"
+        android:text="@string/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toRightOf="@id/guideline"
-        android:onClick="nextMeme"/>
+        android:onClick="nextMeme"
+        android:background="@color/nextButtonColor"
+        android:textColor="@color/white"/>
 
     <!--Guidelines here help us to place Buttons to half width-->
     <androidx.constraintlayout.widget.Guideline

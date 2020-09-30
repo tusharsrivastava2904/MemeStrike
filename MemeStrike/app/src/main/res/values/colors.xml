@@ -3,4 +3,10 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="shareButtonColor">#E91E63</color>
+    <color name="nextButtonColor">#9C27B0</color>
+    <color name="white">#ffffff</color>
+    <color name="bgcolor">#302F2F</color>
+
 </resources>
